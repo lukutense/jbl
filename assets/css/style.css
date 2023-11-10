@@ -174,17 +174,29 @@ img{
     font-weight: var(--font-semi-bold);
 }
 
-@media screen and (min-width:450px) and (max-width:1150px){
-    .nav__logo{
-        font-size: 2rem;
-    }
-}
+
 
 .nav__toggle,
 .nav__close {
     display: flex;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+.active__link{
+    color: var(--first-color);
+}  
+
+@media screen and (max-width:449px){
+    .bg-header::after{
+        backdrop-filter: blur(60px);
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:1150px){
+    .nav__logo{
+        font-size: 2rem;
+    }
 }
 
 @media screen and (min-width:1024px){
@@ -270,9 +282,6 @@ img{
     }
 }
 
-.active__link{
-    color: var(--first-color);
-}    
 
         /* Home */
 
